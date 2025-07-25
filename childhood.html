@@ -111,11 +111,12 @@
       padding: 30px;
       margin-bottom: 30px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      transition: box-shadow 0.3s ease;
+      display: none;
+      transition: all 0.5s ease;
     }
 
-    .card:hover {
-      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    .card.active {
+      display: block;
     }
 
     .card h2 {
@@ -127,6 +128,23 @@
       margin-top: 0;
     }
 
+    .next-button {
+      display: block;
+      margin: 0 auto 40px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .next-button:hover {
+      background: #2f4534;
+    }
+
     footer {
       background: var(--primary);
       color: white;
@@ -134,6 +152,13 @@
       text-align: center;
       font-size: 0.95em;
     }
+img {
+  width: 600px;  /* Adjust this value as needed */
+  height: 400px;  /* Keeps the aspect ratio */
+  display: block;
+  margin: 20px auto;  /* Centers the image horizontally */
+  border-radius: 10px;  /* Optional: rounds the corners */
+}
 
     @media (max-width: 768px) {
       header h1 {
@@ -176,7 +201,7 @@
 
 <header>
   <h1>My Childhood</h1>
-  <p>The foundation years that shaped who I am today. Every memory, every lesson, and every moment contributed to building my character.</p>
+  <p>The foundation years that shaped who I am today. Step by step, one story at a time.</p>
 </header>
 
 <section class="photo-section">
@@ -186,28 +211,71 @@
 
 <section>
   <div class="keywords">
-    <span>Curious</span>
-    <span>Creative</span>
-    <span>Determined</span>
-    <span>Empathetic</span>
-    <span>Endeavorous</span>
-    <span>Thoughtful</span>
+    <span>Resilient</span>
+    <span>Hopeful</span>
+    <span>Focused</span>
+    <span>Humble</span>
+    <span>Supportive Family</span>
+    <span>Driven</span>
   </div>
 
-  <div class="card">
-    <h2>Memorable Moments</h2>
-    <p>From the excitement of my first day of school to the laughter of family camping trips and the thrill of learning to ride a bike—these cherished memories defined the magic of my early years.</p>
+  <!-- Card 1 -->
+  <div class="card active">
+    <h2>Early Life</h2>
+    <p>I was born into a simple, hardworking family. We weren't poor, but life required planning. My parents balanced every need with care, ensuring we had food, education, and values. Laughter echoed in our home, but so did the sound of ambition. They taught me to dream with my feet on the ground.</p>
   </div>
 
+  <!-- Card 2 -->
   <div class="card">
-    <h2>Family Influence</h2>
-    <p>My family played a crucial role in shaping my values and character. Their unwavering support, life teachings, and encouragement laid the foundation for my resilience, kindness, and curiosity.</p>
+    <h2>Discovering My Drive</h2>
+    <p>Even as a child, I was curious—always asking "why" and tinkering with anything I could take apart and rebuild. My love for learning grew when I started school. I remember getting excited about books and how they could take me to other worlds. Education quickly became my escape and my identity.</p>
   </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <h2>Lessons Through Responsibility</h2>
+    <p>At home, I helped with chores and errands. Sometimes I joined my dad at his workshop, learning not just tools but patience. These early lessons of work ethic and humility have stayed with me. I didn’t realize it then, but I was learning life—one task, one mistake, one improvement at a time.</p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <h2>Challenges That Built Me</h2>
+    <p>Like any journey, mine had rough paths. I struggled with confidence and fitting in. Sometimes it felt like others had more — more resources, more chances. But I refused to let comparisons define me. I focused on effort and became stronger with every setback I overcame.</p>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <h2>Growth and Gratitude</h2>
+    <p>By the time I reached my teen years, I had grown emotionally and intellectually. I was leading study groups, winning school contests, and helping others who struggled like I once did. My family’s belief in me became my inner voice. I understood what it meant to rise steadily, humbly, and with purpose.</p>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <h2>The Foundation of Who I Am</h2>
+    <p>Every moment from my childhood—good or challenging—shaped me. It gave me a backbone of resilience, a heart of empathy, and a mind that refuses to settle. I didn’t just survive my childhood. I built from it. And today, I walk with pride, knowing the roots of who I am were grounded in love, discipline, and growth.</p>
+  </div>
+
+  <button class="next-button" onclick="nextCard()">Next →</button>
 </section>
 
 <footer>
   <p>&copy; 2025 My Personal Journey. All rights reserved.</p>
 </footer>
+
+<script>
+  let currentCard = 0;
+  const cards = document.querySelectorAll(".card");
+
+  function nextCard() {
+    if (currentCard < cards.length - 1) {
+      cards[currentCard].classList.remove("active");
+      currentCard++;
+      cards[currentCard].classList.add("active");
+    } else {
+      alert("You’ve finished the journey. 🎉");
+    }
+  }
+</script>
 
 </body>
 </html>
