@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(120deg, #00796b, #004d40);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 2.5rem;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #004d40;
+      border-bottom: 2px solid #e0f2f1;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .cards div {
+      background-color: #e0f2f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      min-width: 150px;
+      text-align: center;
+      font-weight: 600;
+      color: #004d40;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .cards div:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+      list-style-type: circle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      color: #555;
+      background-color: #fafafa;
+      border-top: 1px solid #ddd;
+    }
+
+    footer h3 {
+      color: #00796b;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cards div {
+        width: 80%;
+      }
+    }
+  </style>
+  <nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="childhood.html">👶 Childhood</a>
+  <a href="education.html">🎓 Education</a>
+  <a href="skills.html">💼 Skills</a>
+  <a href="future.html">🌟 Future</a>
+  <a href="contact.html">📞 Contact</a>
+</nav>
+
+</head>
+<body>
+
+  <header>
+    <h1>My Skills</h1>
+    <p>A showcase of the abilities I’ve developed through learning, projects, and experience.</p>
+  </header>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="cards">
+      <div>Web Design</div>
+      <div>Programming</div>
+      <div>Graphic Design</div>
+      <div>Video Editing</div>
+      <div>Software Tools</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Soft Skills</h2>
+    <div class="cards">
+      <div>Leadership</div>
+      <div>Communication</div>
+      <div>Time Management</div>
+      <div>Problem Solving</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Playing Basketball</li>
+      <li>Listening to Music</li>
+      <li>Playing Chess</li>
+      <li>Working on Projects</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recent Achievements</h2>
+    <ul>
+      <li>Successfully led a team project from idea to execution.</li>
+      <li>Completed a full-stack development course.</li>
+      <li>Participated in local coding competitions.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h3>Continuous Learning</h3>
+    <p>
+      I believe in the power of continuous learning and skill development. Every day presents
+      opportunities to grow — whether through formal education, practical experiences, or personal
+      exploration of new interests and technologies.
+    </p>
+  </footer>
+
+</body>
+</html>

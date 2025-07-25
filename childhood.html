@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Childhood</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    :root {
+      --primary: #0a1d3b;
+      --secondary: #13294b;
+      --accent: #3a5a40;
+      --light: #f9fafb;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: var(--primary);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffde59;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      max-width: 750px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .photo-section {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .photo-section img {
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo-section img:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-caption {
+      font-size: 1em;
+      margin-top: 12px;
+      color: #666;
+    }
+
+    .keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 40px 0;
+      justify-content: center;
+    }
+
+    .keywords span {
+      background: var(--primary);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-weight: 500;
+      font-size: 0.95em;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .card h2 {
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      margin-top: 0;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.3em;
+      }
+
+      .card {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .keywords {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .keywords span {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="childhood.html">👶 Childhood</a>
+  <a href="education.html">🎓 Education</a>
+  <a href="skills.html">💼 Skills</a>
+  <a href="future.html">🌟 Future</a>
+  <a href="contact.html">📞 Contact</a>
+</nav>
+
+<header>
+  <h1>My Childhood</h1>
+  <p>The foundation years that shaped who I am today. Every memory, every lesson, and every moment contributed to building my character.</p>
+</header>
+
+<section class="photo-section">
+  <img src="images/pexels-julianemonarifotografia-33133405.jpg" alt="My Childhood Photo">
+  <p class="photo-caption">A cherished photo from my childhood days.</p>
+</section>
+
+<section>
+  <div class="keywords">
+    <span>Curious</span>
+    <span>Creative</span>
+    <span>Determined</span>
+    <span>Empathetic</span>
+    <span>Endeavorous</span>
+    <span>Thoughtful</span>
+  </div>
+
+  <div class="card">
+    <h2>Memorable Moments</h2>
+    <p>From the excitement of my first day of school to the laughter of family camping trips and the thrill of learning to ride a bike—these cherished memories defined the magic of my early years.</p>
+  </div>
+
+  <div class="card">
+    <h2>Family Influence</h2>
+    <p>My family played a crucial role in shaping my values and character. Their unwavering support, life teachings, and encouragement laid the foundation for my resilience, kindness, and curiosity.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 My Personal Journey. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
